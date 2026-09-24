@@ -6,16 +6,12 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
-    cooldown:
-      default-days: 7
 
   - package-ecosystem: npm
     directory: '/'
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
-    cooldown:
-      default-days: 7
 
 # @rezliant-change-log:start
 # RZ-6D5EA3AF · 2026-09-24 · Dependabot missing cooldown period
