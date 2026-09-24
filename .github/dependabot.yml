@@ -1,13 +1,26 @@
 version: 2
 updates:
+  # @rezliant RZ-6D5EA3AF · 2026-09-24 — Defers updates until packages have community vetting window
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: npm
     directory: '/'
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
+
+# @rezliant-change-log:start
+# RZ-6D5EA3AF · 2026-09-24 · Dependabot missing cooldown period
+# Change: Added cooldown blocks with default-days: 7 to github-actions and npm package ecosystems
+# Benefit: Defers updates until packages have community vetting window
+# Scope: updates configuration for both package-ecosystem entries
+# Rezliant remediation history: 1 total · 1 most recent shown
+# @rezliant-change-log:end
